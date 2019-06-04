@@ -1,4 +1,4 @@
-# Instalando-UBUNTU-Linux-CNC# # Instalando-UBUNTU-Linux-CNC
+# Instalando-UBUNTU-Linux-CNC.
 Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a versão correta e com a imagem apropriada do kernel,  para o  Linux CNC.
 
 - CONSIDERAÇÕES INICIAIS: 
