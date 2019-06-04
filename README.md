@@ -2,8 +2,9 @@
 Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a versão correta e com a imagem apropriada do kernel,  para o  Linux CNC.
 
 - CONSIDERAÇÕES INICIAIS: 
-- Objetivo deste post, é fazer uma instalação do Linux extremamente compacta, 
-- Sem a necessidade de instalar pacotes e depois subtrai-los, já com versão correta e com a imagem apropriada do kernel,  para o  LinuxCNC 
+- Objetivo deste post, é fazer uma instalação do Linux extremamente compacta,
+- Utilizando imagem i386, pois amd64 não é suportada pelo kernel do linuxcnc.
+- Sem a necessidade de instalar pacotes e depois subtrai-los, já com versão correta e com a imagem apropriada para kernel do LinuxCNC. 
 
 - PRÉ REQUISITOS:
 - Um pendriver 2 GB.
