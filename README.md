@@ -13,7 +13,7 @@ Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a
 
 - TRABALHOS INICIAIS.
 - Baixe o Ubuntu
-- O LinuxCNC será executado na versão do Ubuntu Precise . Você pode baixar
+- O LinuxCNC será executado na versão do Ubuntu Precise-(i386). Você pode baixar aqui:
 http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ubuntu136/images/netboot/mini.iso
 - Crie uma unidade USB inicializável.
 - Baixe Rufus, para a criação de pendrives USB inicializáveis.  Rufus é um excelente utilitário para a criação de pendrives USB. inicializáveis. Não requer instalação: https://rufus.akeo.ie/
@@ -103,7 +103,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![Componentes1](images/Componentes1.PNG)
 - Vigéssima oitava tela:
 ![Componentes2](images/Componentes2.PNG)
-- Pular configuraçao de senhas. 
+- Pular configuração de senhas. 
 - Configurar o relógio.
 - Vigéssima nona tela
 ![horas](images/horas.PNG)
@@ -130,7 +130,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![Discos3](images/Discos3.PNG)
 - Trigéssima oitava tela:
 ![Discos4](images/Discos4.PNG)
-- Escolha este modo, que é o mais simples.
+- Escolha este modo proposto, que é o mais simples.
 - Trigéssima nona tela:
 ![Discos5](images/Discos5.PNG)
 - Confirme as mudanças.
@@ -238,7 +238,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - ~# umount -lfv /target 
 - ~# shutdown -r  now
 - Reinicie a máquina!
-- ~# apt-get install xfce4 synaptic linux-firmware-all
+- ~# apt-get install xfce4 synaptic linux-firmware
 
 ![xfve41](images/xfce41.PNG)
 - 
@@ -273,7 +273,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![rclocal](images/rclocal.PNG)
 - Não menos importante!
 - Abra o CNC => Stepconf Wizart
-- Na aba certa edite assim!(porta paralela COM1).
+- Na aba certa edite como está na fig.abaixo!(porta paralela COM1).
 ![stepper](images/stepper.PNG)
 
 - AVISO LEGAL
