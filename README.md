@@ -141,7 +141,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Quadragéssima primeira tela
 ![Final](images/Final.PNG)
 - Neste ponto, estamos com a partição /dev/sda1 montada em /target,
-- A onde iremos proriamente instalar o linux.
+- A onde iremos propriamente instalar o linux.
 - Quadragéssima segunda tela:
 ![Pulodogato](images/Pulodogato.PNG)
 - Tecle: 
