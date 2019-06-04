@@ -158,6 +158,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - ~# apt-get install --no-install-recommends nano
 - ~# nano /etc/apt/sources.list
 - Edite sources.list com está fig
+
 ![sources](images/sources.PNG)
 - Salve a edição: 
 - Ctrl+x
