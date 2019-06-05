@@ -283,7 +283,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - EXTRA
 - Não menos importante!
 - Abra o CNC => Stepconf Wizart
-- Na aba certa edite como está na fig.abaixo!(porta paralela COM1).
+- Na aba certa edite como está na fig.abaixo!(porta paralela COM1)
 ![stepper](images/stepper.PNG)
 - Pinagem (out/in) porta paralela:
 
