@@ -43,13 +43,17 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![Linguagen_7](images/Linguagen_7.PNG)
 - Selecione o "layout" do teclado:
 - Décima tela:
-!keyboard(images/keyboard.PNG)
+
+![keyboard](images/keyboard.PNG)
 - Décima primeira tela:
-!keyboard1(images/keyboard1.PNG)
+
+![keyboard1](images/keyboard1.PNG)
 - Décima segunda tela:
-!keyboard2(images/keyboard2.PNG)
+
+![keyboard2](images/keyboard2.PNG)
 - Décima terceira tela:
-!keyboard3(images/keyboard3.PNG)
+
+![keyboard3](images/keyboard3.PNG)
 - Localização de componentes da rede.
 - Décima quarta tela:
 ![Network](images/Network.PNG)
@@ -286,6 +290,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Na aba certa edite como está na fig.abaixo!(porta paralela COM1).
 ![stepper](images/stepper.PNG)
 - Pinagem (out/in) porta paralela:
+
 ![paralela](images/paralela.PNG)
 
 - AVISO LEGAL
