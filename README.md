@@ -286,6 +286,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Na aba certa edite como está na fig.abaixo!(porta paralela COM1).
 ![stepper](images/stepper.PNG)
 - Pinagem (out/in) porta paralela:
+
 ![paralela](images/paralela.PNG)
 
 - AVISO LEGAL
