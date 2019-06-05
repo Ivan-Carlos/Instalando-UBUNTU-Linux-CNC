@@ -1,4 +1,4 @@
-# Instalando-UBUNTU-Linux-CNC.
+﻿# Instalando-UBUNTU-Linux-CNC.
 Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a versão correta e com a imagem apropriada do kernel,  para o  Linux CNC.
 
 - CONSIDERAÇÕES INICIAIS: 
@@ -41,18 +41,27 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![Linguagen_6](images/Linguagen_6.PNG)
 - Nona tela:
 ![Linguagen_7](images/Linguagen_7.PNG)
-- Localização de componentes da rede.
+- Selecione o "layout" do teclado:
 - Décima tela:
+!keyboard(images/keyboard.PNG)
+- Décima primeira tela:
+!keyboard1(images/keyboard1.PNG)
+- Décima segunda tela:
+!keyboard2(images/keyboard2.PNG)
+- Décima terceira tela:
+!keyboard3(images/keyboard3.PNG)
+- Localização de componentes da rede.
+- Décima quarta tela:
 ![Network](images/Network.PNG)
 - Descomente.
-- Décima primeira tela:
+- Décima quinta tela:
 ![Network_1](images/Network_1.PNG)
 - Configurando a rede.
-- Décima segunda tela
+- Décima sexta tela
 ![Network_2](images/Network_2.PNG)
 - Seguramente você poderá utilizar a opção "yes" que o Linux configurará a rede automaticamente.
 - Mas se você gosta de um desafio!
-- Décima terceira tela:
+- Décima sétima tela:
 ![Network_3-5](images/Network_3-5.PNG)
 - Pesquise com antecedência o número do IP do seu roteador, Servidores DNS IPv4.
 - Este numero vocé poderá encontrar no Windows na barra status da rede, configurações, Servidores DNS IPv4: 192.168.2.1
@@ -60,89 +69,89 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Copíe as tres primeiras faixas, invente um na quarta  faixa.
 - Obs: Não utilize "1" que é o número do seu roteador, não utilize, o mesmo número da máquina Windons!
 
-- Décima quarta tela
+- Décima oitava tela
 ![Network_4](images/Network_4.PNG)
 - A máscara de rede poderá ser a mesma sugerida pelo Linux.
 - No caso da imagem:
-- Décima quinta tela
+- Décima nona tela
 ![Network_5](images/Network_5.PNG)
 - Deixe como aparecer, que estará correto!
-- Décima sexta tela:
+- Vigéssima  tela:
 ![Network_6](images/Network_6.PNG)
 - Deixe como aparecer, que estará correto!
-- Décima sétima tela:
+- Vigéssima primeira tela:
 ![Network_7](images/Network_7.PNG)
 - Confira e confirme:
-- Décima oitava tela:
+- Vigéssima segunda tela:
 ![Network_8](images/Network_8.PNG)
 - De um nome para sua máquina:
-- Décima nona tela:
+- Vigéssima terceira tela:
 ![Hosts](images/Hosts.PNG)
 - Deixe em branco:
-- Vigéssima tela.
+- Vigéssima quarta tela.
 ![Hosts_1](images/Hosts_1.PNG)
 - Procurando provedor Linux.
-- Vigéssima primeira tela:
+- Vigéssima quinta tela:
 ![Provedor](images/Provedor.PNG)
-- Vigéssima segunda tela
+- Vigéssima sexta tela
 ![Provedor1](images/Provedor1.PNG)
 - Selecione o país
-- Vigéssima terceira tela
+- Vigéssima sétima tela
 ![Provedor2](images/Provedor2.PNG)
 - De enter:
-- Vigéssima quarta tela:
+- Vigéssima oitava tela:
 ![Provedor3](images/Provedor3.PNG)
 - Deixe em branco.
-- Vigéssima quinta tela:
+- Vigéssima nona tela:
 ![Provedor4](images/Provedor4.PNG)
 - Começando a  baixar os pacotes.
-- Vigéssima sexta tela
+- Trigéssima tela
 ![Componentes](images/Componentes.PNG)
 - Deixe em branco.
-- Vigéssima sétima tela
+- Trigéssima primeira tela
 ![Componentes1](images/Componentes1.PNG)
-- Vigéssima oitava tela:
+- Trigéssima segunda tela:
 ![Componentes2](images/Componentes2.PNG)
 - Pular configuração de senhas. 
 - Configurar o relógio.
-- Vigéssima nona tela
+- Trigéssima terceira tela
 ![horas](images/horas.PNG)
-- Trigéssima tela:
+- Trigéssima quarta tela:
 ![horas1](images/horas1.PNG)
-- Trigéssima primeira tela:
+- Trigéssima quinta tela:
 ![horas2](images/horas2.PNG)
-- Trigéssima segunda tela:
+- Trigéssima sexta tela:
 ![horas3](images/horas3.PNG)
 - Detectando os díscos:
-- Trigéssima terceira tela:
+- Trigéssima sétima tela:
 ![Discos0](images/Discos0.PNG)
-- Trigéssima quarta tela:
+- Trigéssima oitava tela:
 ![Discos1](images/Discos1.PNG)
 - Descomente.
-- Trigéssima quinta tela:
+- Trigéssima nona tela:
 ![Discos2](images/Discos2.PNG)
 - Particionar o disco.
-- Trigéssima sexta tela:
+- Quadragéssima tela:
 ![Discos](images/Discos.PNG)
 - Se a HD. foi formatada aparerá assim.
 - Selecione o modo guiado.
-- Trigéssima sétima tela:
+- Quadragéssima primeira tela:
 ![Discos3](images/Discos3.PNG)
-- Trigéssima oitava tela:
+- Quadragéssima segunda tela:
 ![Discos4](images/Discos4.PNG)
 - Escolha este modo proposto, que é o mais simples.
-- Trigéssima nona tela:
+- Quadragéssima terceira tela:
 ![Discos5](images/Discos5.PNG)
 - Confirme as mudanças.
-- Quadragéssima tela:
+- Quadragéssima quarta tela:
 ![Discos6](images/Discos6.PNG)
 - Quando aparecer esta tela,  vamos dar "O Pulo do gato"
 - Apertar  as  teclas ctrl+alt+F2
-- Quadragéssima primeira tela
+- Quadragéssima quinta tela
 ![Final](images/Final.PNG)
 - Neste ponto, estamos com a partição /dev/sda1 montada em /target,
 - A onde iremos propriamente instalar o linux.
-- Quadragéssima segunda tela:
+- Quadragéssima sexta tela:
 ![Pulodogato](images/Pulodogato.PNG)
 - Tecle: 
 - ~# cd /target
@@ -271,10 +280,13 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Reinicie a máquina!
 
 ![rclocal](images/rclocal.PNG)
+- EXTRA
 - Não menos importante!
 - Abra o CNC => Stepconf Wizart
 - Na aba certa edite como está na fig.abaixo!(porta paralela COM1).
 ![stepper](images/stepper.PNG)
+- Pinagem (out/in) porta paralela:
+![paralela](images/paralela.PNG)
 
 - AVISO LEGAL
 - OS AUTORES DESTE SOFTWARE NÃO ACEITAM ABSOLUTAMENTE A RESPONSABILIDADE POR QUAISQUER DANOS OU PERDAS RESULTANTES DE SEU USO.
