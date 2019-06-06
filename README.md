@@ -237,7 +237,8 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![sources1](images/sources1.PNG)
 - ~# apt-get update
 - ~# apt-get install --no-install-recommends initramfs-tools linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae grub-pc
-
+- ~# uname -r
+![uname](images/uname.PNG)
 ![grub](images/grub.PNG)
 - ~#  passwd
 - Enter new UNIX password:
@@ -269,7 +270,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Instale o leafpad
 
 ![leafpad](images/leafpad.PNG)
-
+- EXTRA
 - Se você tiver problemas para carregar "parport".
 - Abra promt de comando, tecle: lsmod
 - Procure por "parport".
@@ -280,7 +281,6 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Reinicie a máquina!
 
 ![rclocal](images/rclocal.PNG)
-- EXTRA
 - Não menos importante!
 - Abra o CNC => Stepconf Wizart
 - Na aba certa edite como está na fig.abaixo!(porta paralela COM1)
