@@ -241,6 +241,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![grub](images/grub.PNG)
 
 - ~# uname -r
+
 ![uname](images/uname.PNG)
 - ~#  passwd
 - Enter new UNIX password:
