@@ -237,9 +237,11 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![sources1](images/sources1.PNG)
 - ~# apt-get update
 - ~# apt-get install --no-install-recommends initramfs-tools linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae grub-pc
+
+![grub](images/grub.PNG)
+
 - ~# uname -r
 ![uname](images/uname.PNG)
-![grub](images/grub.PNG)
 - ~#  passwd
 - Enter new UNIX password:
 - Retype  new UNIX password:
