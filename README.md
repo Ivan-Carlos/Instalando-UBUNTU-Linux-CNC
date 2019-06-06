@@ -273,6 +273,8 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Instale o leafpad
 
 ![leafpad](images/leafpad.PNG)
+
+![latency](images/latency.PNG)
 - EXTRA
 - Se você tiver problemas para carregar "parport".
 - Abra promt de comando, tecle: lsmod
