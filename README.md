@@ -213,7 +213,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Se deu tudo certo no começo, você pode pular esta parte da edição do fstab.
 - ~# blkid > /etc/fstab
 - ~# nano /etc/fstab
-- proc	proc	proc	nodev,noexec,nosuid	0	0 	
+- proc	/proc	proc	nodev,noexec,nosuid	0	0 	
 - #/dev/sda1
 - UUID=************************** /ext4 errors=remount-ro 0 1
 - #/dev/sda2
