@@ -23,7 +23,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Apos instalar o pendriver com o boot , espete o em uma unidade USB  no  PC que será instalado o Linuxcnc, e de o boot na maquina, e inicie a instalação.
 - Utilize a opção => Adavances Options = Comannd line expert install
 - Primeira tela:
-![Ubuntu](images/Ubuntu.PNG)
+ ![Ubuntu](images/Ubuntu.PNG)
 - Selecione o idioma de sua preferência:
 - Segunda tela:
 ![Linguagen](images/Linguagen.PNG)
