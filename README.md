@@ -1,7 +1,7 @@
 ﻿# Instalando-UBUNTU-Linux-CNC.
 Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a versão correta e com a imagem apropriada do kernel,  para o  Linux CNC.
 
-- CONSIDERAÇÕES INICIAIS: 
+# CONSIDERAÇÕES INICIAIS: 
 - Objetivo deste post, é fazer uma instalação do Linux extremamente compacta,
 - Utilizando imagem i386, pois amd64 não é suportada pelo kernel do linuxcnc.
 - Sem a necessidade de instalar pacotes e depois subtrai-los, já com versão correta e com a imagem apropriada para kernel do LinuxCNC. 
@@ -11,7 +11,7 @@ Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a
 - Um PC. (pode ser uma máquina mais antiga,com boot para pendriver), com uma HD (formatada). de 10 GB. Placa de rede, uma entrada USB e porta paralela (COM).
 - Acesso a Internet. 
 
-- TRABALHOS INICIAIS.
+# TRABALHOS INICIAIS.
 - Baixe o Ubuntu
 - O LinuxCNC será executado na versão do Ubuntu Precise-(i386). Você pode baixar aqui:
 http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ubuntu136/images/netboot/mini.iso
@@ -275,7 +275,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![leafpad](images/leafpad.PNG)
 
 ![latency](images/latency.PNG)
-- EXTRA
+# EXTRA
 - Se você tiver problemas para carregar "parport".
 - Abra promt de comando, tecle: lsmod
 - Procure por "parport".
@@ -296,7 +296,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 
 Data do post: 05-06-2019
 
-- AVISO LEGAL
+# AVISO LEGAL
 - OS AUTORES DESTE SOFTWARE NÃO ACEITAM ABSOLUTAMENTE A RESPONSABILIDADE POR QUAISQUER DANOS OU PERDAS RESULTANTES DE SEU USO.
 - É EXTREMAMENTE NÃO CONFIAR EM SOFTWARE APENAS POR SEGURANÇA.
 
