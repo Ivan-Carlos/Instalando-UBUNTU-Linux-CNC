@@ -6,7 +6,7 @@ Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a
 - Utilizando imagem i386, pois amd64 não é suportada pelo kernel do linuxcnc.
 - Sem a necessidade de instalar pacotes e depois subtrai-los, já com versão correta e com a imagem apropriada para kernel do LinuxCNC. 
 
-- PRÉ REQUISITOS:
+# PRÉ REQUISITOS:
 - Um pendriver 2 GB.
 - Um PC. (pode ser uma máquina mais antiga,com boot para pendriver), com uma HD (formatada). de 10 GB. Placa de rede, uma entrada USB e porta paralela (COM).
 - Acesso a Internet. 
@@ -19,7 +19,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Baixe Rufus, para a criação de pendrives USB inicializáveis.  Rufus é um excelente utilitário para a criação de pendrives USB. inicializáveis. Não requer instalação: https://rufus.akeo.ie/
 - Selecione um pendrive USB de 2 Gb ou maior. Todas as informações nele contidas serão sobrescritas
 ![rufus](images/rufus.PNG)
-- INICIANDO A INSTALAÇÂO.
+# INICIANDO A INSTALAÇÂO.
 - Apos instalar o pendriver com o boot , espete o em uma unidade USB  no  PC que será instalado o Linuxcnc, e de o boot na maquina, e inicie a instalação.
 - Utilize a opção => Adavances Options = Comannd line expert install
 - Primeira tela:
