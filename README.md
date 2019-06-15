@@ -300,6 +300,9 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Eu o chamo de "método autoflagelação":
 - ~# apt-get install xinit icewm linuxcnc gedit nautilus linux-firmware
 
+![icewm](images/icewm.PNG)
+
+
 Data do post: 05-06-2019
 
 # AVISO LEGAL
