@@ -299,9 +299,25 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Outro método de instalar a interface gráfica no lugar do xfce4 é com o icewm, 
 - Eu o chamo de "método autoflagelação":
 - ~# apt-get install xinit icewm linuxcnc gedit nautilus linux-firmware
+- Acesse o patinho fe..digo o sistema gráfico.
+- ~# startx
+- Abra com o gedit o arquivo /etc/X11/icewm/programs
+- Edite o arquivo como na figura a baixo:
+
+![menu](images/menu.PNG)
+- Se tudo correr direito o resultado será este:
 
 ![icewm](images/icewm.PNG)
+- Com o editor aberto edite também
+- /etc/shadow
+- A linha do root e deixe assim:
 
+![shadow](images/shadow.PNG)
+- Edite também rc.local e acressente
+- Uma linha como na figura abaixo
+
+![rclocal1](images/rclocal1.PNG)
+- Reinicie a maquina
 
 Data do post: 05-06-2019
 
