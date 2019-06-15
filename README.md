@@ -297,7 +297,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 
 #EXTRA DO EXTRA
 - Outro método de instalar a interface gráfica no lugar do xfce4 é com o icewm, 
-- Eu o chamo de "metodo autoflagelação":
+- Eu o chamo de "método autoflagelação":
 - ~# apt-get install xinit icewm linuxcnc gedit nautilus linux-firmware
 
 Data do post: 05-06-2019
