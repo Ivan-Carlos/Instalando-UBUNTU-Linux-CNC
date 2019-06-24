@@ -20,6 +20,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Baixe Rufus, para a criação de pendrives USB inicializáveis.  Rufus é um excelente utilitário para a criação de pendrives USB. inicializáveis. Não requer instalação: https://rufus.akeo.ie/
 - Selecione um pendrive USB de 2 Gb ou maior. Todas as informações nele contidas serão sobrescritas
 ![rufus](images/rufus.PNG)
+
 # INICIANDO A INSTALAÇÃO.
 - Apos instalar o pendriver com o boot , espete o em uma unidade USB  no  PC que será instalado o Linuxcnc, e de o boot na maquina, e inicie a instalação.
 - Utilize a opção => Adavances Options = Comannd line expert install
