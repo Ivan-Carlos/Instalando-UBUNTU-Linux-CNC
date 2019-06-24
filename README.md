@@ -19,6 +19,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Crie uma unidade USB inicializável.
 - Baixe Rufus, para a criação de pendrives USB inicializáveis.  Rufus é um excelente utilitário para a criação de pendrives USB. inicializáveis. Não requer instalação: https://rufus.akeo.ie/
 - Selecione um pendrive USB de 2 Gb ou maior. Todas as informações nele contidas serão sobrescritas
+
 ![rufus](images/rufus.PNG)
 
 # INICIANDO A INSTALAÇÃO.
