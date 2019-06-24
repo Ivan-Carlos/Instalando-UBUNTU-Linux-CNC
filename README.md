@@ -4,6 +4,7 @@ Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a
 # CONSIDERAÇÕES INICIAIS: 
 - Objetivo deste post, é fazer uma instalação do Linux extremamente compacta,
 - Utilizando imagem i386, pois amd64 não é suportada pelo kernel do linuxcnc.
+- Porém você poderá utilzar um kernel do proprio linux (rt-amd64).
 - Sem a necessidade de instalar pacotes e depois subtrai-los, já com versão correta e com a imagem apropriada para kernel do LinuxCNC. 
 
 # PRÉ REQUISITOS:
