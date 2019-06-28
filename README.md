@@ -227,7 +227,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 - Lembre-se:  Não edite os valores da UUID, eles são únicos. se o fstab não estiver todo correto, pode causar problemas na sua inicialização.
 - Continua........
 - Instalando as chaves.
-- ~# apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 3cb9fd148f374fef
+- ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 3cb9fd148f374fef
 
 ![key](images/key.PNG)
 - Edite /etc/apt/sources.list
