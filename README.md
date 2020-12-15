@@ -159,6 +159,7 @@ http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ub
 ![Pulodogato](images/Pulodogato.PNG)
 - Tecle: 
 - ~# cd /target
+- ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 - ~# debootstrap --variant=minbase precise /target
 - ~# mount -v --bind /dev  /target/dev
 - ~# chroot /target /bin/bash
