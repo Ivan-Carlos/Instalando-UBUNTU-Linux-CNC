@@ -15,7 +15,7 @@ Objetivo é fazer uma instalação do Ubuntu Linux extremamente compacta,  Com a
 # TRABALHOS INICIAIS.
 - Baixe o Ubuntu
 - O LinuxCNC será executado na versão do Ubuntu Precise-(i386). Você pode baixar aqui:
-http://br.archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/20101020ubuntu136/images/netboot/mini.iso
+http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/mini.iso
 - Crie uma unidade USB inicializável.
 - Baixe Rufus, para a criação de pendrives USB inicializáveis.  Rufus é um excelente utilitário para a criação de pendrives USB. inicializáveis. Não requer instalação: https://rufus.akeo.ie/
 - Selecione um pendrive USB de 2 Gb ou maior. Todas as informações nele contidas serão sobrescritas
