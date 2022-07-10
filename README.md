@@ -191,7 +191,6 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - ~# apt-get install --no-install-recommends net-tools
 - ~# apt-get install --no-install-recommends ifupdown
 - ~# apt-get install --no-install-recommends isc-dhcp-client
-- ~# apt-get install --no-install-recommends resolvconf
 - ~# apt-get install --no-install-recommends network-manager
 - Edite /etc/hosts
 - ~# nano /etc/hosts
