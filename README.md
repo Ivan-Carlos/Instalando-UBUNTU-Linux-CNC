@@ -154,6 +154,8 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - Quadragéssima quinta tela
 ![Final](images/Final.PNG)
 - Neste ponto, estamos com a partição /dev/sda1 montada em /target,
+
+      mount -t ext4 -o rw /dev/sda1 /mnt/
 - A onde iremos propriamente instalar o linux.
 - Quadragéssima sexta tela:
 ![Pulodogato](images/Pulodogato.PNG)
