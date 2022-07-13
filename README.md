@@ -167,7 +167,7 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 
       ~# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
 - 
-      apt-get update
+      ~: apt-get update
 - ~# debootstrap --variant=minbase precise /target
 - ~# mount -v --bind /dev  /target/dev
 - ~# chroot /target /bin/bash
