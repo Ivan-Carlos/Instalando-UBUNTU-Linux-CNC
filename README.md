@@ -159,10 +159,11 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - A onde iremos propriamente instalar o linux.
 - Quadragéssima sexta tela:
 ![Pulodogato](images/Pulodogato.PNG)
-- Tecle: 
+- Digite: 
       
       ~# cd /target
-- ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+
+      ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 - ~# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
 - ~# apt-get update
 - ~# debootstrap --variant=minbase precise /target
