@@ -253,7 +253,7 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
       ~# cat /etc/fstab
 -   
       ~# blkid
-- Obs: a numeração correta dos UUID é apresenda pelo blkid, se o UUID aparecerá com outro valor no arquivo fstab, você precisará edita-lo.
+- Obs: a numeração correta dos UUID é apresenda pelo blkid, se o UUID aparecer com outro valor no arquivo fstab, você precisará edita-lo.
 ![fstab](images/fstab.PNG)
 - Atenção:
 - Se deu tudo certo no começo, você pode pular esta parte da edição do fstab.
@@ -281,7 +281,7 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
       UUID=**************************** none swap sw 0 0
 - ctrl + x
 - y + enter
-- Lembre-se:  Não edite os valores da UUID, eles são únicos. se o fstab não estiver todo correto, pode causar problemas na sua inicialização.
+- Lembre-se:  Não edite os valores da UUID, com valores incorretos, eles são valores únicos. se o fstab não estiver todo correto, vai causar problemas na sua inicialização.
 - Continua........
 - Instalando as chaves.
 - 
