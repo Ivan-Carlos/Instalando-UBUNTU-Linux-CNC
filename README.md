@@ -236,12 +236,13 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
       ~# password config
 - 
       ~# password confirm
-- Full Name [ ]: user
-- Room Number [ ]: enter
-- Work Phone [ ]: enter
-- Home Phone [ ]: enter
-- Other [ ]: enter
-- Is the information correct [Y/n}: y
+- 
+      Full Name [ ]: user
+      Room Number [ ]: enter
+      Work Phone [ ]: enter
+      Home Phone [ ]: enter
+      Other [ ]: enter
+      Is the information correct [Y/n}: y
 - 
       ~#  apt-get autoclean
 - 
@@ -313,16 +314,31 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 
 ![uname](images/uname.PNG)
 - 
-      ~#  passwd
-- Enter new UNIX password:
-- Retype  new UNIX password:
+      ~# passwd
+- 
+      ~# Enter new UNIX password:
+      ~# Retype  new UNIX password:
+-
+      ~# umount -flv /dev/pts
+-
+      ~# umount -flv /dev/
+-
+      ~# umount -flv /proc
+-
+      ~# umount -flv /sys
+-
+      ~# umount -flv /run
+-
+      ~# umount -flv /tmp
 - 
       ~# exit
 - 
       ~# cd /
-- ~# umount -lfv /target 
-- ~# shutdown -r  now
+-
+      ~# umount -lfv /mnt
 - Reinicie a máquina!
+-
+      ~# shutdown -r  now
 - ~# apt-get install xfce4 synaptic linux-firmware
 
 ![xfve41](images/xfce41.PNG)
