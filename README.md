@@ -321,8 +321,6 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 -
       ~# umount -flv /dev/pts
 -
-      ~# umount -flv /dev/
--
       ~# umount -flv /proc
 -
       ~# umount -flv /sys
@@ -334,6 +332,8 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
       ~# exit
 - 
       ~# cd /
+-
+      ~# umount -flv /dev/
 -
       ~# umount -lfv /mnt
 - Reinicie a máquina!
