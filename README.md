@@ -318,6 +318,7 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - 
       ~# Enter new UNIX password:
       ~# Retype  new UNIX password:
+- Vamos desmontar tudo o que foi montado, e reiniciar a máquina.
 -
       ~# rm -v /var/lib/dbus/machine-id 
 -
