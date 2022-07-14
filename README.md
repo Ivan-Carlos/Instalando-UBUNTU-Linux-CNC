@@ -342,7 +342,10 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - Reinicie a máquina!
 -
       ~# shutdown -r  now
-- ~# apt-get install xfce4 synaptic linux-firmware
+- Quando estiver tudo correto!
+- Máquina reiciada!
+- 
+      ~# apt-get install xfce4 synaptic linux-firmware
 
 ![xfve41](images/xfce41.PNG)
 - 
@@ -352,9 +355,13 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - 
 ![xfve44](images/xfce44.PNG)
 
-- ~# shutdown -r  now
 - Reinicie a máquina!
-- ~# startx
+- 
+      ~# shutdown -r  now
+
+- Máquina reiciada!
+- 
+      ~# startx
 
 ![xfce4](images/xfce4.PNG)
 - Abra o synaptic
