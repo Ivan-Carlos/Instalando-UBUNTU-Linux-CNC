@@ -161,25 +161,37 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 ![Pulodogato](images/Pulodogato.PNG)
 - Digite: 
 -      
-      cd /target
+      ~# cd /mtn
 -
-      apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+      ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 -
-      apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
+      ~# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
 - 
-      Apt-get update
-- ~# debootstrap --variant=minbase precise /target
-- ~# mount -v --bind /dev  /target/dev
-- ~# chroot /target /bin/bash
-- ~# mount -vt tmpfs none /run
-- ~# mount -vt proc none proc
-- ~# mount -vt sysfs none /sys
-- ~# mount -vt devpts devpts /dev/pts
-- ~# mount -vt tmpfs none /tmp
-- ~# export LC_ALL=C
-- ~# apt-get update
-- ~# apt-get install --no-install-recommends nano
-- ~# nano /etc/apt/sources.list
+      ~# Apt-get update
+- 
+      ~# debootstrap --variant=minbase precise /mnt
+- 
+      ~# mount -v --bind /dev  /mnt/dev
+- 
+      ~# chroot /mnt /bin/bash
+- 
+      ~# mount -vt tmpfs none /run
+- 
+      ~# mount -vt proc none proc
+- 
+      ~# mount -vt sysfs none /sys
+- 
+      ~# mount -vt devpts devpts /dev/pts
+- 
+      ~# mount -vt tmpfs none /tmp
+- 
+      ~# export LC_ALL=C
+- 
+      ~# apt-get update
+- 
+      ~# apt-get install --no-install-recommends nano
+- 
+      ~# nano /etc/apt/sources.list
 - Edite sources.list com está fig
 
 ![sources](images/sources.PNG)
@@ -187,79 +199,127 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
 - Ctrl+x
 - Y+enter
 - Obs: o passo anterior, não poderá dar "erro", se houver algum erro, corriga novamente o arquivo editado.
-- ~# apt-get update
-- ~#  apt-get install --no-install-recommends netbase
-- ~# apt-get install --no-install-recommends apt-utils dialog
-- ~# apt-get install --no-install-recommends iputils-ping
-- ~# apt-get install --no-install-recommends apt-file
-- ~# apt-file update
-- ~# apt-file search bin/ifconfig
-- ~# apt-get install --no-install-recommends net-tools
-- ~# apt-get install --no-install-recommends ifupdown
-- ~# apt-get install --no-install-recommends isc-dhcp-client
-- ~# apt-get install --no-install-recommends network-manager
+- 
+      ~# apt-get update
+- 
+      ~#  apt-get install --no-install-recommends netbase
+- 
+      ~# apt-get install --no-install-recommends apt-utils dialog
+- 
+      ~# apt-get install --no-install-recommends iputils-ping
+- 
+      ~# apt-get install --no-install-recommends apt-file
+- 
+      ~# apt-file update
+- 
+      ~# apt-file search bin/ifconfig
+- 
+      ~# apt-get install --no-install-recommends net-tools
+- 
+      ~# apt-get install --no-install-recommends ifupdown
+- 
+      ~# apt-get install --no-install-recommends isc-dhcp-client
+- 
+      ~# apt-get install --no-install-recommends network-manager
 - Edite /etc/hosts
-- ~# nano /etc/hosts
+- 
+      ~# nano /etc/hosts
 - 127.0.0.1 localhost
 - 127.0.1.1 Linux-cnc
 - ctrl + x
 - y + enter
-- ~# apt-get install --no-install-recommends sudo
-- ~# adduser user
-- ~# password config
-- ~# password confirm
+- 
+      ~# apt-get install --no-install-recommends sudo
+- 
+      ~# adduser user
+- 
+      ~# password config
+- 
+      ~# password confirm
 - Full Name [ ]: user
 - Room Number [ ]: enter
 - Work Phone [ ]: enter
 - Home Phone [ ]: enter
 - Other [ ]: enter
 - Is the information correct [Y/n}: y
-- ~#  apt-get autoclean
-- ~# usermod -a -G sudo user
-- ~#  groups user
+- 
+      ~#  apt-get autoclean
+- 
+      ~# usermod -a -G sudo user
+- 
+      ~#  groups user
 - O arquivo /etc/fstab deverá estar como na fig. abaixo.
-- ~# cat /etc/fstab
-- Obs: a numeração UUID aparecerá com outro valor  
+- 
+      ~# cat /etc/fstab
+-   
+      ~# blkid
+- Obs: a numeração correta dos UUID é apresenda pelo blkid, se o UUID aparecerá com outro valor no arquivo fstab, você precisará edita-lo.
 ![fstab](images/fstab.PNG)
 - Atenção:
 - Se deu tudo certo no começo, você pode pular esta parte da edição do fstab.
-- ~# blkid > /etc/fstab
-- ~# nano /etc/fstab
-- proc	/proc	proc	nodev,noexec,nosuid	0	0 	
-- #/dev/sda1
-- UUID=************************** /ext4 errors=remount-ro 0 1
-- #/dev/sda2
-- UUID=**************************** none swap sw 0 0
+-
+      ~# mv /etc/fstab /etc/fstab.bk
+- 
+      ~# blkid > /etc/fstab
+- 
+      ~# nano /etc/fstab
+- Vá para o final do arquivo e importe o fstab.bk, de comando a seguir:
+
+      Ctrl+r
+
+      /etc/fstab.bk
+- Edite com os números onde está [*] por números UUID onde for necessário.
+
+      proc	/proc	proc	nodev,noexec,nosuid	0	0 	
+      
+      #/dev/sda1
+
+      UUID=************************** /ext4 errors=remount-ro 0 1
+
+      #/dev/sda2
+
+      UUID=**************************** none swap sw 0 0
 - ctrl + x
 - y + enter
 - Lembre-se:  Não edite os valores da UUID, eles são únicos. se o fstab não estiver todo correto, pode causar problemas na sua inicialização.
 - Continua........
 - Instalando as chaves.
-- ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 3cb9fd148f374fef
+- 
+      ~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 3cb9fd148f374fef
 
 ![key](images/key.PNG)
 - Edite /etc/apt/sources.list
+- 
+      ~# nano /etc/apt/sources.list
 - Acrecente a linha no fim do arquivo e salve.
-- ~# nano /etc/apt/sources.list
-- deb http://linuxcnc.org/ precise base 2.7-rtai
-- deb-src http://linuxcnc.org/ precise base 2.7-rtai
+  
+      deb http://linuxcnc.org/ precise base 2.7-rtai
+    
+      deb-src http://linuxcnc.org/ precise base 2.7-rtai
 - ctrl + x
 - y + enter
 
 ![sources1](images/sources1.PNG)
-- ~# apt-get update
-- ~# apt-get install --no-install-recommends initramfs-tools linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae grub-pc
+
+- 
+      ~# apt-get update
+- 
+      ~# apt-get install --no-install-recommends initramfs-tools linux-image-3.4-9-rtai-686-pae rtai-modules-3.4-9-rtai-686-pae grub-pc
 
 ![grub](images/grub.PNG)
 
-- ~# uname -r
+- 
+      ~# uname -r
 
 ![uname](images/uname.PNG)
-- ~#  passwd
+- 
+      ~#  passwd
 - Enter new UNIX password:
 - Retype  new UNIX password:
-- ~# exit
-- ~# cd /
+- 
+      ~# exit
+- 
+      ~# cd /
 - ~# umount -lfv /target 
 - ~# shutdown -r  now
 - Reinicie a máquina!
