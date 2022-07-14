@@ -319,6 +319,8 @@ http://old-releases.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/
       ~# Enter new UNIX password:
       ~# Retype  new UNIX password:
 -
+      ~# rm -v /var/lib/dbus/machine-id 
+-
       ~# umount -flv /dev/pts
 -
       ~# umount -flv /proc
