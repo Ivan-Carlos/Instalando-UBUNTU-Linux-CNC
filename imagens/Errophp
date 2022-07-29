@@ -1,12 +1,12 @@
 
-sudoedit  mods-available/custom.ini
-"
-; Custom shared config
-; priority=01
-error_reporting = E_ALL
-display_errors = On
-error_log = /var/log/php_errors.log
-log_errors_max_len = 0
-memory_limit = 256M
-post_max_size = 100M
-upload_max_filesize = 100M
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+      enp0s3:
+         dhcp4: no
+         dhcp6: no
+         addresses: [192.168.100.2/24]
+         gateway4: 192.168.100.1
+         nameservers:
+            addresses: [192.168.100.1,8.8.8.8]
