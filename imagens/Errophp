@@ -20,3 +20,268 @@ network:
    gateway4: 192.168.1.1
    nameservers:
     addresses: [8.8.8.8,8.8.4.4]
+alt+f2
+cp /cdrom/pool/main/n/nano/nano_2.2.6-1_i386.deb /target/root/
+cp /cdrom/pool/main/n/nano/wget_1.13.4-2ubuntu1.1_i386.de /target/root/
+sudo cp -rf /root/wget_1.13.4-2ubuntu1.1_i386.deb /home/ivan/
+sudo cp -rf /root/nano_2.2.6-1_i386.deb /home/ivan/
+sudo dpkg -i nano_2.2.6-1_i386.deb 
+sudo nano /etc/apt/sources.list
+wget http://repo.ajenti.org/debian/key -O- | sudo apt-key add -
+echo "deb http://repo.ajenti.org/ng/debian main main ubuntu" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update && sudo apt-get install --no-install-recommends ajenti
+sudo service ajenti restart
+ufw allow 8000
+/*/*/*/*/*/*/*/*/*/*/*/*/*
+HTTP-8080-80
+SSH-2221-22
+
+/*/*/*/*/*/*/*/*/*/*/*/1/4
+ls -la
+pwd
+netstat -tulpn
+sudo apt-get update
+sudo do-release-upgrade
+sudo apt-get install --no-install-recommends ssh
+sudo apt-get install --no-install-recommends python-software-properties
+sudo apt-get install --no-install-recommends php7.0 php7.0-fpm 
+sudo apt-get install --no-install-recommends apache2
+sudo apt-get install --no-install-recommends libapache2-mod-php7.0 libapache2-mod-php
+sudo apt-get install --no-install-recommends mysql-server mysql-client
+sudo apt-get install --no-install-recommends build-essential linux-headers-virtual dkms nano zip unzip wget curl man-db acpid -y
+sudo reboot
+sudo mkdir -p ~/.ssh
+sudo nano ~/.ssh/config
+"
+Host sandbox.dev
+Port 2222
+User parallels
+
+Host ubuntu.dev
+Port 2223
+User sysclass
+IdentityFile ~/.ssh/vb_rsa
+
+Host selimindaial.dev
+Port 2221
+User ivan
+IdentityFile ~/.ssh/selimindaial_rsa
+"
+ls -la
+************************************2/4
+ssh ivan@selimindaial.dev
+cd /var/www
+ls -la
+sudo groupadd webmasters
+sudo adduser ivan webmasters
+sudo adduser www-data webmasters
+sudo tail /etc/group
+getent group webmasters
+sudo chown -R .webmasters html
+sudo chmod -R 775 html
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install --no-install-recommends virtualbox-guest-utils
+sudo apt-get install --no-install-recommends virtualbox-guest-dkms
+sudo apt-get install --no-install-recommends virtualbox-guest-x11
+lsmod
+lsmod | grep -i vbox
+getent group vboxsf
+sudo usermod -a -G vboxsf ivan
+sudo usermod -a -G vboxsf www-data
+ls -alR /media/
+ls /media/sf_vboxsf
+sudo reboot
+cd /media/sf_vboxsf
+sudo touch index.html
+sudo nano index.html
+"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF=8">
+	 <title>Selim Indaial</title>
+</head>
+<body>
+     <h1>Bem vindo ao meu LAMP server</h1>
+</body>
+</html>	
+"
+cat index.html
+ls /var/www
+cd /etc/apache2
+ls -la sites-available
+cd sites-available
+ls -la
+sudo cp 000-default.conf selimindaial.conf
+sudo nano selimindaial.conf
+"
+<VirtualHost *:80 *:8080 >
+        ServerName selimindaial
+        ServerAlias *.dev
+        DocumentRoot /var/www/html
+        LogLevel info 
+        ErrorLog ${APACHE_LOG_DIR}/dev-error.log
+	    CustomLog ${APACHE_LOG_DIR}/dev-access.log combined
+        <Location /server-status>
+                SetHandler server-status
+                Order allow,deny
+                Allow from all
+                Require all granted
+        </Location>
+"  
+cd ..
+sudoedit ports.conf
+"
+Listen 8080
+"
+sudo a2dissite 000-default.conf
+sudo a2ensite selimindaial.conf
+sudo cp -R /media/sf_vboxsf/index.html /var/www/html
+sudo service apache2 graceful
+ls -la sites-enabled
+sudo a2enmod rewrite
+sudo a2enmod vhost_alias
+sudo a2enmod status
+sudo service apache2 graceful
+************************************3/4
+cd /var/www/html
+ls -la
+sudo nano info.php
+"
+<?php phpinfo();
+"
+sudo nano errors.php
+"
+<h1>PHP Errors</h1>
+<h2>Notice</h2>
+<?php echo $array['element']; ?>
+<h2>Warning<h2>
+<?php fopen(); ?>
+<h2>Error</h2>
+<?php fail(); ?>
+<h2>Testing php page for reporting errors!</h2>
+"
+ls -la
+cd /etc/php
+php --version
+ls -la
+cd 7.0
+ls -la
+ls -la mods-available
+php -ini
+sudoedit  mods-available/custom.ini
+"
+; Custom shared config
+; priority=01
+error_reporting = E_ALL
+display_errors = On
+error_log = /var/log/php_errors.log
+log_errors_max_len = 0
+memory_limit = 256M
+post_max_size = 100M
+upload_max_filesize = 100M
+"
+sudo ln -s /etc/php/7.0/mods-available/custom.ini /etc/php/7.0/apache2/conf.d/20-custom.ini
+ls -la apache2/conf.d/ | grep custom
+ls -la  /var/log
+sudo touch /var/log/php_errors.log
+sudo chown .webmasters /var/log/php_errors.log
+ls -la  /var/log
+sudo apt-get install --no-install-recommends php-mbstring php7.0-mbstring php-gettext libapache2-mod-php7.0 libapache2-mod-php
+sudo phpenmod mbstring
+sudo apt-get install --no-install-recommends php-mcrypt php-mysql
+php -m
+php -m | grep -i mcrypt
+php -m | grep -i mbstring
+php -r 'phpinfo();' | grep -i mysqli
+sudo service apache2 restart
+tail /var/log/php_errors.log
+sudo chmod 664 /var/log/php_errors.log
+tail /var/log/php_errors.log
+sudo reboot
+ls -la /etc/mysql
+sudo ln -s /etc/mysql/my.cnf /etc/alternatives/my.cnf
+ls -la /etc/alternatives | grep my.cnf
+sudoedit /etc/mysql/mysql.conf.d/mysqld.cnf
+"
+[client]
+port        = 3306
+socket        = /var/run/mysqld/mysqld.sock
+default-character-set = utf8
+
+[mysqld_safe]
+pid-file    = /var/run/mysqld/mysqld.pid
+socket        = /var/run/mysqld/mysqld.sock
+nice        = 0
+
+[mysqld]
+user        = mysql
+pid-file    = /var/run/mysqld/mysqld.pid
+socket = /var/run/mysqld/mysqld.sock
+port = 3306
+basedir        = /usr
+datadir = /var/lib/mysql
+tmpdir        = /tmp
+lc-messages-dir    = /usr/share/mysql
+explicit_defaults_for_timestamp
+collation-server = utf8_unicode_ci
+init-connect='SET NAMES utf8'
+character-set-server = utf8
+
+bind-address     = 0.0.0.0
+
+key_buffer_size = 384M
+max_allowed_packet = 128M
+#table_open_cache = 512
+sort_buffer_size = 2M
+read_buffer_size = 2M
+read_rnd_buffer_size = 8M
+myisam_sort_buffer_size = 256M
+thread_cache_size = 8
+query_cache_size = 256M
+log-error    = /var/log/mysql/error.log
+symbolic-links=0
+big-tables
+default-storage-engine = MyISAM
+sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+slow-query-log = 2
+slow-query-log-file = /var/log/mysql/slow.log
+general-log = 1
+general-log-file = /var/log/mysql/general.log
+#default-time-zone = 'Europe/Istanbul'
+#max_connections = 1002
+#open-files-limit = 10000
+
+[mysqld1]
+pid-file    = /var/run/mysqld/mysqld1.pid
+socket        = /var/run/mysqld/mysqld1.sock
+port        = 3307
+user        = mysql
+basedir        = /usr
+datadir = /var/lib/mysql1
+
+[mysqldump]
+quick
+max_allowed_packet = 16M
+
+[mysql]
+default-character-set = utf8
+no-auto-rehash
+
+[myisamchk]
+key_buffer_size = 256M
+sort_buffer_size = 256M
+read_buffer = 2M
+write_buffer = 2M
+
+[mysqlhotcopy]
+interactive-timeout
+"
+sudo systemctl restart mysql.service
+mysql -uroot -p
+SHOW DATABASES;
+SELECT * FROM mysql.user WHERE user='root';
+SELECT host,user FROM mysql.user WHERE user='root';
+UPDATE mysql.user SET host='%' WHERE user='root'; host='localhost'; FLUSH PRIVILEGES;
+exit
